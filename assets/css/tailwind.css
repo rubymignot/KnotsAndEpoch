@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'PT Serif', serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        @apply !bg-gray-50 !text-gray-950;
+    }
+
+    #menu-md li a, summary {
+        @apply hover:!bg-transparent focus:bg-transparent active:!bg-transparent hover:!text-red-950 hover:font-bold;
+    }
+
+    #dropdown-md a {
+        @apply hover:!bg-transparent focus:bg-transparent active:!bg-transparent hover:!text-red-950 hover:font-bold;
+    }
+}
